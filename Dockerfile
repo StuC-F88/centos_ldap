@@ -11,3 +11,5 @@ RUN yum check-update; \
     yum install -y python3-pip; \
     yum install -y wget; \
     yum clean all
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]
